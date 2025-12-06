@@ -60,6 +60,7 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  color: var(--global-footer-text-color, var(--global-text-color));
 }
 
 .page__footer-follow {
@@ -93,4 +94,13 @@
       white-space: nowrap;
     }
   }
+
+  color: var(--global-footer-text-color, var(--global-text-color));
+}
+
+.page__footer-sitemap {
+    color: var(--global-footer-text-color, var(--global-text-color));
+    a {
+        color: var(--global-footer-text-color, var(--global-text-color));
+      }
 }
