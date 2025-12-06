@@ -41,3 +41,33 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+.portfolio-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  .portfolio-text {
+    flex: 1;
+  }
+
+  .portfolio-image {
+    flex: 0 0 300px;
+    /* Adjust width as needed */
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-content {
+    flex-direction: column;
+  }
+
+  .portfolio-image {
+    flex: 1 1 auto;
+  }
+}
